@@ -1,0 +1,182 @@
+/* Variáveis de Cores */
+:root {
+  --cor-fundo: #333;
+  --cor-texto: #fff;
+  --cor-destaque: red;
+}
+
+/* Reset e Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 200px; /* Espaço para o menu lateral fixo */
+}
+
+/* Cabeçalho Fixo */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.titulo {
+  font-size: 1.5em;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.notification-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* Menu Lateral Fixo */
+.menu-lateral {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 200px;
+  height: calc(100vh - 60px);
+  background-color: #222;
+  color: var(--cor-texto);
+  padding-top: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.menu-lateral li {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.menu-lateral img {
+  margin-right: 10px;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+  margin-left: 220px;
+  padding: 80px 20px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 22%;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.atividades {
+  margin-top: 20px;
+}
+
+.atividades ul {
+  list-style: none;
+}
+
+.atividades li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.atividades img {
+  margin-right: 10px;
+}
+
+/* Rodapé Fixo */
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-nav a {
+  color: var(--cor-texto);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-lateral {
+      width: 60px;
+  }
+
+  .menu-lateral li {
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8em;
+  }
+
+  .conteudo-principal {
+      margin-left: 80px;
+      padding: 80px 10px 20px;
+  }
+
+  .cards {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .card {
+      flex: 1 1 100%;
+  }
+}
