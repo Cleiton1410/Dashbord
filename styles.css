@@ -228,6 +228,8 @@ body {
   .header {
     padding: 10px;
     justify-content: space-between;
+    flex-direction: row;
+    height: 60px; /* Reduz a altura */
   }
 
   .header h1 {
