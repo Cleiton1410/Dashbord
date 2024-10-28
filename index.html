@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard da Biblioteca</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Cabeçalho Fixo -->
     <header class="header">
-        <h1>Biblioteca Virtual</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#"><i class="fas fa-home" title="Início"></i> Início</a></li>
-                <li><a href="#"><i class="fas fa-book" title="Acervo"></i> Acervo</a></li>
-                <li>
-                    <a href="#" class="dropdown">Sobre <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nossa História</a></li>
-                        <li><a href="#">Equipe</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fas fa-envelope" title="Contato"></i> Contato</a></li>
+      <h1>Biblioteca Virtual</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home" title="Início"></i> Início</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-book" title="Acervo"></i> Acervo</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown"
+              >Sobre <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Nossa História</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
-        </nav>
-        <div class="notification-icon">
-            <i class="fas fa-bell" title="Notificações"></i>
-            <span class="badge">99+</span>
-            <span class="notification-label">Notificações</span>
-        </div>
+          </li>
+
+          <li>
+            <a href="#"
+              ><i class="fas fa-envelope" title="Contato"></i> Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="notification-icon">
+        <i class="fas fa-bell" title="Notificações"></i>
+        <span class="badge">99+</span>
+        <span class="notification-label">Notificações</span>
+      </div>
     </header>
 
     <!-- Menu Lateral -->
     <aside class="sidebar">
-        <ul>
-            <li><a href="#"><i class="fas fa-tachometer-alt" title="Dashboard"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-chart-line" title="Estatísticas"></i> Estatísticas</a></li>
-            <li><a href="#"><i class="fas fa-cog" title="Configurações"></i> Configurações</a></li>
-            <li><a href="#"><i class="fas fa-life-ring" title="Suporte"></i> Suporte</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#"
+            ><i class="fas fa-tachometer-alt" title="Dashboard"></i>
+            Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-chart-line" title="Estatísticas"></i>
+            Estatísticas</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-cog" title="Configurações"></i> Configurações</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-life-ring" title="Suporte"></i> Suporte</a
+          >
+        </li>
+      </ul>
     </aside>
 
     <!-- Conteúdo Principal -->
     <main class="main-content">
-        <section class="cards">
-            <div class="card">
-                <i class="fas fa-book-open"></i>
-                <h3>Acervo Digital</h3>
-                <p>Acesso a e-books e audiolivros.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-user-friends"></i>
-                <h3>Usuários Ativos</h3>
-                <p>Usuários registrados e acessos.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Eventos</h3>
-                <p>Agenda de eventos literários.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-comments"></i>
-                <h3>Feedbacks</h3>
-                <p>Avaliações e comentários.</p>
-            </div>
-        </section>
-        <section class="activities">
-            <h2>Atividades Recentes</h2>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> Cadastro novo realizado</li>
-                <li><i class="fas fa-book-reader"></i> Livro novo adicionado ao acervo</li>
-                <li><i class="fas fa-exclamation-circle"></i> Manutenção do sistema</li>
-            </ul>
-        </section>
+      <section class="cards">
+        <div class="card">
+          <i class="fas fa-book-open"></i>
+          <h3>Acervo Digital</h3>
+          <p>Acesso a e-books e audiolivros.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-user-friends"></i>
+          <h3>Usuários Ativos</h3>
+          <p>Usuários registrados e acessos.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Eventos</h3>
+          <p>Agenda de eventos literários.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>Feedbacks</h3>
+          <p>Avaliações e comentários.</p>
+        </div>
+      </section>
+      <section class="activities">
+        <h2>Atividades Recentes</h2>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Cadastro novo realizado</li>
+          <li>
+            <i class="fas fa-book-reader"></i> Livro novo adicionado ao acervo
+          </li>
+          <li>
+            <i class="fas fa-exclamation-circle"></i> Manutenção do sistema
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!-- Rodapé -->
     <footer class="footer">
-        <nav>
-            <a href="#">Privacidade</a> | 
-            <a href="#">Termos de Uso</a>
-        </nav>
-        <p>&copy; 2024 Biblioteca Virtual</p>
+      <nav>
+        <a href="#">Privacidade</a> |
+        <a href="#">Termos de Uso</a>
+      </nav>
+      <p>&copy; 2024 Biblioteca Virtual</p>
     </footer>
-
-    <script>
-        // Adicionando evento para mostrar o dropdown
-        document.querySelector('.dropdown').addEventListener('click', function() {
-            document.querySelector('.dropdown-menu').classList.toggle('show');
-        });
-
-        // Fecha o dropdown se clicar fora
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropdown')) {
-                var dropdowns = document.getElementsByClassName("dropdown-menu");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
