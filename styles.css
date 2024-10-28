@@ -221,7 +221,7 @@ body {
 @media (max-width: 768px) {
   /* Menu Lateral */
   .sidebar {
-    display: none; /* Esconder sidebar em telas pequenas */
+    display: flex; /* Esconder sidebar em telas pequenas */
   }
 
   /* Cabeçalho */
@@ -229,7 +229,7 @@ body {
     padding: 10px;
     justify-content: space-between;
     flex-direction: row;
-    height: 60px; /* Reduz a altura */
+    height: 20px; /* Reduz a altura */
   }
 
   .header h1 {
