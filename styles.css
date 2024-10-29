@@ -264,12 +264,12 @@ body {
 
   .notification-icon,
   .nav-menu {
-    display: none;
+    display: block;
   }
 
   /* Menu lateral como barra oculta */
   .sidebar {
-    display: none;
+    display: block;
   }
 
   /* Conteúdo principal ocupando a tela inteira */
