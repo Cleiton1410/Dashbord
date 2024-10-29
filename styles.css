@@ -215,94 +215,77 @@ body {
   text-decoration: none;
   margin: 0 10px;
 }
-
 /* Responsividade */
-/* Melhorias de Responsividade para Celulares */
-@media (max-width: 768px) {
-  /* Menu Lateral */
-  .sidebar {
-    display: flex; /* Esconder sidebar em telas pequenas */
-  }
 
-  /* Cabeçalho */
+/* Tablets (telas entre 768px e 1024px) */
+@media (max-width: 1024px) {
   .header {
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 20px; /* Reduz a altura */
+    padding: 15px;
   }
 
   .header h1 {
-    font-size: 1.2em; /* Reduzir o tamanho do título */
+    font-size: 1.3em;
+    margin-left: 10px;
   }
 
-  /* Conteúdo Principal */
+  .sidebar {
+    width: 180px;
+    padding-top: 80px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+    padding: 80px 15px 15px;
+  }
+
+  .cards .card {
+    flex: 1 1 100%;
+  }
+
+  .footer {
+    width: calc(100% - 180px);
+    margin-left: 180px;
+  }
+}
+
+/* Celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+  /* Ajustes no cabeçalho */
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    font-size: 1.2em;
+    margin-left: 0;
+  }
+
+  .notification-icon,
+  .nav-menu {
+    display: none;
+  }
+
+  /* Menu lateral como barra oculta */
+  .sidebar {
+    display: none;
+  }
+
+  /* Conteúdo principal ocupando a tela inteira */
   .main-content {
     margin: 0;
     padding: 80px 10px 10px;
   }
 
-  /* Cards */
-  .cards {
-    flex-direction: column;
-    gap: 10px; /* Menor espaçamento entre os cards */
-  }
-
-  .card {
+  .cards .card {
     flex: 1 1 100%;
-    padding: 15px;
   }
 
   /* Rodapé */
   .footer {
     width: 100%;
-    margin-left: 0;
-    padding: 10px;
-    font-size: 0.8em;
-  }
-
-  /* Menu de navegação e notificações */
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-menu ul li {
-    margin: 10px 0; /* Ajusta espaçamento entre itens do menu */
-  }
-
-  .notification-icon {
-    margin-right: 0;
-    margin-top: 10px;
-  }
-
-  .dropdown-menu a {
-    padding: 10px;
-    font-size: 0.9em;
-  }
-}/* Responsividade para Cabeçalho em Telas Pequenas */
-@media (max-width: 768px) {
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Preenche a largura do cabeçalho */
-  }
-
-  .nav-menu ul li {
-    margin: 5px 0; /* Ajuste o espaçamento entre itens */
-    width: 100%; /* Preenche a largura do item */
-    text-align: center; /* Centraliza os itens */
-  }
-  
-  /* Reduzindo o padding e tamanhos do cabeçalho para melhorar a exibição */
-  .header {
-    padding: 10px;
-    height: auto;
-  }
-
-  .header h1 {
-    font-size: 1.2em;
     margin: 0;
+    padding: 15px 10px;
   }
 }
-
