@@ -108,7 +108,7 @@ body {
   background-color: #3a4d78;
   color: #fff;
   padding-top: 100px;
-  position: fixed;
+  position: flex;
   top: 0;
   bottom: 0;
 }
@@ -269,7 +269,8 @@ body {
 
   /* Menu lateral como barra oculta */
   .sidebar {
-    display: none;
+    display:flex;
+   
   }
 
   /* Conteúdo principal ocupando a tela inteira */
