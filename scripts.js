@@ -6,14 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.addEventListener("click", function (event) {
       event.preventDefault(); // Evita o comportamento padrão do link
       dropdownMenu.classList.toggle("show"); // Alterna a visibilidade do menu
+      event.stopPropagation()
     });
   
     // Fecha o dropdown se o usuário clicar fora dele
     window.addEventListener("click", function (event) {
       // Verifica se o clique foi fora do dropdown e do menu
-      if (!dropdown.contains(event.target) && dropdownMenu.classList.contains("hide")) {
-        dropdownMenu.classList.remove("hide"); // Remove a classe 'show' se clicar fora
+      if (!dropdownMenu.classList.contains("show")) {
+        dropdownMenu.classList.add("show"); // Remove a classe 'show' se clicar fora
       }
+    });
+    dropdownMenu.addEventListener("click",function(event){
+      event.stopPropagation()
     });
   });
   
