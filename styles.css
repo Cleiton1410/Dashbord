@@ -77,7 +77,6 @@ body {
 
 /* Menu Dropdown */
 .dropdown-menu {
-  display: none; /* Esconde o menu por padrão */
   position: absolute;
   background-color: #2a3d66;
   min-width: 160px;
